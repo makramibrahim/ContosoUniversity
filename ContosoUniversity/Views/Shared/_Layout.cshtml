@@ -40,6 +40,7 @@
 
         .navbar-brand {
             margin-top: 130px;
+           
         }
 
         .capImg {
@@ -60,20 +61,20 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <a class="navbar-brand" asp-controller="Home" asp-action="Index"><h4>Contoso University</h4><img class="capImg" src="~/images/cap.png" /></a>
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link btn btn-dark" asp-controller="Home" asp-action="Index">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item  active">
                     <a class="nav-link btn btn-dark" asp-controller="Students" asp-action="Index">Students <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link btn btn-dark" asp-controller="Courses" asp-action="Inedx">Courses <span class="sr-only">(current)</span></a>
+                    <a class="nav-link btn btn-dark" asp-controller="Courses" asp-action="Index">Courses <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link btn btn-dark" asp-controller="Instructors" asp-action="Index">Instructors <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link btn btn-dark" asp-controller="Departments" asp-action="Index">Departments <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-dark" asp-controller="Home" asp-action="About">About <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
