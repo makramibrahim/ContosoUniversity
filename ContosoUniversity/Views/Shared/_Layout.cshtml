@@ -77,9 +77,9 @@
                     <a class="nav-link btn btn-dark" asp-controller="Home" asp-action="About">About <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            <form class="form-inline my-2 my-lg-0" asp-action="Index" method="get">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" name="SearchString" value="@ViewData["currentFilter"]" >
+                <button class="btn btn-dark my-2 my-sm-0" type="submit" value="Search">Search</button>
             </form>
         </div>
     </nav><br />
