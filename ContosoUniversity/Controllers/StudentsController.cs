@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data;
-using ContosoUniversity.Models;
+using BYUniversity.Data;
+using BYUniversity.Models;
 
-namespace ContosoUniversity.Controllers
+namespace BYUniversity.Controllers
 {
     public class StudentsController : Controller
     {
@@ -31,7 +31,7 @@ namespace ContosoUniversity.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 students = students.Where(s => s.LastName.Contains(searchString)
-                                       || s.FirstMidName.Contains(searchString));
+                                       || s.FirstName.Contains(searchString));
             }
             switch (sortOrder)
             {
